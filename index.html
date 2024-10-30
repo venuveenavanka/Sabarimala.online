@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabarimala Temple</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="toTopbtn">
+        <a href="#top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    </div>
+    <!-- Marquee for Scrolling Text -->
+    <marquee behavior="scroll" direction="left" class="marquee">
+         ! స్వామియే శరణం అయ్యప్ప ! Temple open for pilgrimage from November to January
+     The Virtual - Q Quota for the Mandalam and Makaravilakku 2024-2025 Festival is now released ! ! Swamy Saranam ! ! 
+    </marquee>
+
+    <!-- Header -->
+    <header id="top">
+        <div class="navbar">
+            <img src="./images/logo.png" alt="Temple Logo" height="200px">
+            <h1>శబరిమల - అయ్యప్ప స్వామి  దేవాలయం | Sabarimala </h1>
+            <button class="navbar-toggle" onclick="toggleMenu()" >☰</button>
+            <nav class="navbar-menu" id="navbar-menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#routes">Routes</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#timings">Timings</a></li>
+                    <li><a href="#festivals">Festivals</a></li>
+                    <li><a href="#songs">Songs</a></li>
+                    <li><a href="#preparation">Preparation</a></li>
+                    <li><a href="#accommodations">Accommodations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About the Temple -->
+<section id="about" class="section-1">
+    <h2>! స్వామియే శరణం అయ్యప్ప !</h2>
+    <video autoplay muted loop preload="auto" poster="poster.jpg" id="bgVideo">
+        <source src="./images/bg_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+    
+    <!-- Location -->
+    <section id="location" class="section section-2">
+        <h2>Location</h2>
+        <p>శబరిమల ఆలయం కేరళ రాష్ట్రంలో ప్రసిద్ధ అయ్యప్ప స్వామి ఆలయం, సంవత్సరానికి లక్షలాది భక్తులు ఇక్కడికి యాత్ర చేస్తారు.</p>
+    <p>The Sabarimala Temple is a renowned pilgrimage site in Kerala, attracting millions of devotees, especially from November to January.</p>
+        <p>శబరిమల ఆలయం కేరళలోని పతనంతిట్ట జిల్లాలో ఉంది.</p>
+        <p>The temple is nestled in the forested Pathanamthitta district, near the Pamba River.</p>
+        <div id="map"></div>
+    </section>
+
+    <section id="routes" class="section section-3">
+        <h2>Travel Routes</h2>
+        <h3>ట్రైన్ మార్గాలు/Train Routes</h3>
+        <ul class="route-list">
+            <li>హైదరాబాద్ → కొచ్చి → పతనంతిట్ట | Hyderabad → Kochi → Pathanamthitta</li>
+            <li>ఖమ్మం → కోట్టాయం → పతనంతిట్ట | Khammam → Kottayam → Pathanamthitta</li>
+        </ul>
+        <h3>బస్ మార్గాలు/Bus Routes</h3>
+        <ul class="route-list">
+            <li>హైదరాబాద్ → పంబ | Hyderabad → Pamba</li>
+            <li>వరంగల్ → పంబ | Warangal → Pamba</li>
+        </ul>
+    </section>
+    
+
+
+    <div class="container">
+        <div class="bus-info">
+            <img style="border-radius: 20px;" src="./images/kolkata-bus.jpg" height="100px" alt="">
+            <h1>Bus Route from Hyderabad to Sabarimala</h1> 
+        </div>
+        
+        <div class="roots-container">
+            <ul class="route-list">
+                <li>
+                    <span class="stop">1. Hyderabad (HYD)</span>
+                    <span class="distance">Starting Point</span>
+                </li>
+                <li>
+                    <span class="stop">2. Kurnool</span>
+                    <span class="distance">(Approx. 220 km from HYD)</span>
+                    <p>A major city and stop for refreshment.</p>
+                </li>
+                <li>
+                    <span class="stop">3. Ananthapuramu</span>
+                    <span class="distance">(Approx. 360 km from HYD)</span>
+                    <p>Another significant stop on the route.</p>
+                </li>
+                <li>
+                    <span class="stop">4. Bangalore</span>
+                    <span class="distance">(Approx. 570 km from HYD)</span>
+                    <p>A major junction city; many buses from Hyderabad stop here for passenger changes.</p>
+                </li>
+                <li>
+                    <span class="stop">5. Krishnagiri</span>
+                    <span class="distance">(Approx. 625 km from HYD)</span>
+                    <p>A town near Bangalore, often used as a stopping point.</p>
+                </li>
+                <li>
+                    <span class="stop">6. Salem</span>
+                    <span class="distance">(Approx. 700 km from HYD)</span>
+                    <p>A common rest stop for buses traveling south.</p>
+                </li>
+                <li>
+                    <span class="stop">7. Coimbatore</span>
+                    <span class="distance">(Approx. 780 km from HYD)</span>
+                    <p>Another major city where buses may stop.</p>
+                </li>
+                <li>
+                    <span class="stop">8. Palakkad</span>
+                    <span class="distance">(Approx. 830 km from HYD)</span>
+                    <p>A town in Kerala that could serve as a stopover.</p>
+                </li>
+                <li>
+                    <span class="stop">9. Kochi (Ernakulam)</span>
+                    <span class="distance">(Approx. 900 km from HYD)</span>
+                    <p>A major city where you can transfer to a bus heading to Pamba.</p>
+                </li>
+                <li>
+                    <span class="stop">10. Kottayam</span>
+                    <span class="distance">(Approx. 960 km from HYD)</span>
+                    <p>An alternative stop before heading to Pamba.</p>
+                </li>
+                <li>
+                    <span class="stop">11. Pamba</span>
+                    <span class="distance">(Approx. 1,020 km from HYD)</span>
+                    <p>The nearest bus station to Sabarimala.</p>
+                </li>
+                <li>
+                    <span class="stop">12. Sabarimala</span>
+                    <span class="distance">(Approx. 4-5 km from Pamba)</span>
+                    <p>The final destination.</p>
+                </li>
+            </ul>
+        </div>
+
+        <h1>Summary of Distances</h1>
+      <p><i class="fa fa-star" aria-hidden="true"></i> <b>Total Distance from Hyderabad to Pamba:</b> Approximately 1,200 - 1,500 km, depending on the exact route and stops.</p> 
+         <p><i class="fa fa-star" aria-hidden="true"></i> <b>Distance from Pamba to Sabarimala:</b> Approximately 4-5 km.</p> 
+    </div>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section section-4" >
+        <h2>Temple Gallery</h2>
+        <div class="gallery">
+            <img src="./images/image.webp" alt="Sabarimala Temple">
+            <img src="./images/sabarimala-ayyappa.webp" alt="Sabarimala Temple">
+            <img src="https://i.pinimg.com/736x/1b/76/08/1b7608193142f8245bff7e1a3b71e162.jpg" alt="Temple Image">
+            <img src="./images/IMG_2839.JPG" alt="Sabarimala Temple">
+            <img src="./images/IMG_2963.JPG" alt="Sabarimala Temple">
+            <img src="./images/IMG_3325.JPG" alt="Sabarimala Temple">
+            <img src="./images/hqdefault.jpg" alt="Sabarimala Temple">
+            <img src="./images/Swamiye Saranam.gif" alt="Sabarimala Temple">
+        </div>
+    </section>
+
+    <!-- Temple Timings -->
+    <section id="timings" class="section section-5">
+        <h2>Temple Timings</h2>
+        <p>The temple is open from 4:00 AM to 11:00 PM during the pilgrimage season.</p>
+        <table>
+            <thead>
+                <tr><th>పూజ పేరు / Name of Puja</th> <th>సమయం / Time</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>నాదస్వర పూజ / Nadaswaram Pooja</td> <td>ఉదయం 4:00 AM</td></tr>
+                <tr><td>ఉషపూజ / Ushapuja</td> <td>ఉదయం 5:00 AM</td></tr>
+                <tr><td>నివేద్యం / Nivedyam</td> <td>ఉదయం 5:30 AM</td></tr>
+                <tr><td>నేయ్యాభిషేకం / Neyyabhishekam</td> <td>ఉదయం 5:00 AM - 11:00 AM</td></tr>
+                <tr><td>నిర్మల్య దర్శనం / Nirmalya Darshanam</td> <td>ఉషపూజ తరువాత</td></tr>
+                <tr><td>మహాగణపతి హోమం / Maha Ganapathi Homam</td> <td>ఉదయం 6:00 AM</td></tr>
+                <tr><td>పంచామృత అభిషేకం / Panchamritha Abhishekam</td> <td>ఉదయం 7:00 AM</td></tr>
+                <tr><td>అభిషేకం / Abhishekam</td> <td>ఉదయం 8:00 AM</td></tr>
+                <tr><td>మలార్ నైవేద్యం / Malar Naivedyam</td> <td>ఉదయం 8:30 AM</td></tr>
+                <tr><td>మధ్యాహ్న పూజ / Madhyahna Pooja</td> <td>మధ్యాహ్నం 12:00 PM</td></tr>
+                <tr><td>దీపారాధన / Deeparadhana</td> <td>సాయంత్రం 6:30 PM</td></tr>
+                <tr><td>అతజ పూజ / Athazha Pooja</td> <td>సాయంత్రం 7:30 PM</td></tr>
+                <tr><td>హరివరాసనం / Harivarasanam</td> <td>రాత్రి 10:00 PM</td></tr>
+            </tbody>
+        </table>
+        
+    </section>
+
+    <!-- Festivals -->
+    <section id="festivals" class="section section-6">
+        <h2>Festivals</h2>
+        <p>శబరిమలలో ప్రధాన పండుగలు మకర విలక్కు మరియు మండల పూజ. ఈ పండుగలు శ్రద్ధగా, భక్తితో జరుపుకుంటారు.</p>
+        <p>Makara Vilakku and Mandala Pooja are the major festivals celebrated with immense devotion at Sabarimala, drawing thousands of pilgrims every year.</p>
+        
+        <h3>మకర విలక్కు (Makara Vilakku)</h3>
+        <p>మకర విలక్కు పండుగ, జనవరిలో జరుపబడుతుంది. ఇది భక్తులలో అపారమైన విశ్వాసాన్ని, ఆధ్యాత్మిక అనుభూతిని కలిగిస్తుంది.</p>
+        <p>The Makara Vilakku festival, held in January, is known for the celestial light sighting on the Makara Jyothi star, symbolizing divine blessing.</p>
+        
+        <h3>మండల పూజ (Mandala Pooja)</h3>
+        <p>మండల పూజ నవంబరు నుండి డిసెంబరు వరకు 41 రోజుల పాటు జరుగుతుంది. ఇది అత్యంత పవిత్రమైన కాలంగా భావించబడుతుంది.</p>
+        <p>Mandala Pooja, spanning 41 days from November to December, is a time for strict spiritual observance, culminating in a grand celebration at Sabarimala.</p>
+        
+    </section>
+
+
+    <!-- Ayyappa Songs -->
+    <section id="songs" class="section section-8">
+        <h2>Ayyappa Songs</h2>
+        <audio controls>
+            <source src="./images/song.mp3" type="audio/mpeg">Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Pilgrimage Preparation -->
+    <section id="preparation" class="section section-9">
+        <h2>Pilgrimage Preparation</h2>
+        <h3>Preparation includes fasting for 41 days, wearing black or blue attire, and following self-discipline.</h3>
+        <ul>
+            <li><strong>41 రోజుల ఉపవాసాన్ని పాటించాలి:</strong> ఈ సమయంలో భక్తులు మాంసం, మద్యం మరియు ఇతర ఆడంబరాలను త్యజిస్తారు. ఈ ఉపవాసం శరీరాన్ని మరియు మనస్సును శుభ్రపరచడానికి ఉద్దేశించబడింది.</li>
+            <li><strong>నల్ల లేదా నీలం రంగు బట్టలు ధరించండి:</strong> ఈ రంగులు వినయానికి మరియు భక్తికి సంకేతంగా ఉంటాయి. సాదా బట్టలు ధరించడం ద్వారా భక్తులు వారి ఆధ్యాత్మిక ప్రయాణంపై దృష్టి సారించగలుగుతారు.</li>
+            <li><strong>ఆత్మనియంత్రణ మరియు బ్రహ్మచర్యాన్ని పాటించాలి:</strong> యాత్ర కోసం అధిక స్థాయి క్రమశిక్షణ అవసరం, ఇందులో బ్రహ్మచర్యం మరియు భౌతిక ప్రలోభాలను దూరం ఉంచడం కూడా ఉంటుంది.</li>
+            <li><strong>“స్వామియే శరణం అయ్యప్ప” జపం చేయండి:</strong> భక్తులు ఈ పవిత్ర మంత్రాన్ని జపిస్తూ, అయ్యప్ప స్వామి ఆశీర్వాదాలను అందుకోవడానికి ఆధ్యాత్మిక శక్తిని ఆహ్వానిస్తారు.</li>
+        </ul>
+        <ul>
+            <li><strong>నిత్యం దేవాలయాలు సందర్శించండి:</strong> భక్తులు రోజువారి పూజ కోసం సమీప దేవాలయాలను సందర్శిస్తూ యాత్ర కోసం సిద్ధమవుతారు.</li>
+            <li><strong>భూమిపై నిద్రించండి:</strong> దైవ చింతనలో సొంపు మరియు వినయాన్ని సూచించే భాగంగా భక్తులు భూమిపై నిద్రిస్తారు.</li>
+            <li><strong>ఇరుముడి కట్టు మోసుకెళ్ళండి:</strong> భక్తులు యాత్రకు అవసరమైన పూజా సామగ్రితో కూడిన ఇరుముడి కట్టు సిద్ధం చేసి మోసుకెళ్తారు. ఇది పవిత్ర పూజా వస్తువులు మరియు నైవేద్యాన్ని కలిగి ఉంటుంది.</li>
+            <li><strong>చెప్పులు ధరించకూడదు:</strong> ఎక్కువ మంది భక్తులు వినయానికి మరియు యాత్రపట్ల గౌరవాన్ని ప్రదర్శించడానికి పాదరక్షలు లేకుండా ప్రయాణిస్తారు.</li>
+        </ul>
+    </section>
+
+    <section>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WG1BI0HHbgg?si=nufwDelYJXs_4tKc&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OQjwA44KLQ8?si=n8yvvI2TlD45cCLz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+    
+    </section>
+
+    <!-- Accommodations -->
+    <section id="accommodations" class="section section-10">
+        <h2>Accommodations</h2>
+        <p>Lodging facilities are available in Pamba and Sannidhanam.</p>
+        <p>For bookings, contact +91 9876543210 or visit <a href="#contact">Contact Us</a>.</p>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="section section-11">
+        <div class="contact-form-container">
+            <!-- Address Section -->
+            <div class="image-container">
+                <h2> Information</h2>
+                <p>Travancore Devaswom Board – <span style="color: orange;"><b>Swaami Saranam</b></span></p>
+                <p><b>Phone:</b> +91 9876543210</p>
+                <p><b>Email:</b> <a href="mailto:info@sabarimala.in">info@sabarimala.in</a></p>
+                
+                <!-- Google Map Embed -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31487.906047285498!2d77.05038044256337!3d9.42243215193398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b065b984dd41c11%3A0x953037d850a3006e!2sSabarimala%2C%20Kerala!5e0!3m2!1sen!2sin!4v1729959365158!5m2!1sen!2sin" 
+                    width="100%" height="200" 
+                    style="border:0;" allowfullscreen="" 
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Contact Form Section -->
+            <form class="contact-form">
+                <h2>Contact Us</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>2024-2025 Sabarimala Temple</p>
+        <p style="color: #ccc;">&copy; Developed by  <a href="" style="color: rgb(250, 157, 157);">venuveenavanka10@gmail.com</a>. All rights reserved. </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar-menu');
+            menu.classList.toggle('show');
+        }
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.navbar-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.querySelector('.navbar-menu');
+                if (menu.classList.contains('show')) {
+                    menu.classList.remove('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

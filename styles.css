@@ -1,0 +1,547 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5dc; /* Beige background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Marquee */
+.marquee {
+   background-color: orange;
+    color: #000;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: fixed !important;
+    z-index: 999;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: orange;
+    padding: 10px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Basic Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 213, 0);
+    padding: 10px 20px;
+    position: relative;
+    color: #FFF;
+    margin-top: 30px;
+}
+
+.navbar h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar img {
+    height: 60px;
+}
+
+/* Navbar Menu Styling */
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+    border: 1px solid #9c9b9b;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: #fda6a6;
+}
+.navbar nav ul li:hover{
+    background-color: #ff763b;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.navbar nav ul li a:hover {
+    color: #ffebcd;
+}
+
+/* Toggle Button Styling */
+.navbar-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+    /* Hide the full nav menu initially */
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        padding: 10px;
+        border-top: 2px solid #000;
+        z-index: 1000;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navbar h1{
+        font-size: 16px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    /* Show toggle button */
+    .navbar-toggle {
+        display: block;
+    }
+
+    /* Display nav menu vertically */
+    .navbar nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navbar nav ul li {
+        margin: 5px 0;
+        border-radius: 50px;
+        width: 200px;
+    }
+}
+
+/* When menu is open (using JS class) */
+.navbar-menu.show {
+    display: flex;
+}
+.navbar-toggle:focus {
+    outline: 2px solid #8a2be2;
+}
+
+
+/* ==============Bg video============ */
+.section-1 {
+    color: #000 !important;
+    position: relative; /* To position text over the video */
+    overflow: hidden; /* Ensures no overflow from the section */
+    height: 100vh; /* Full viewport height, adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text */
+}
+
+#bgVideo {
+    position: absolute; /* Position the video absolutely */
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    min-width: 100%; /* Ensures video fills the width */
+    min-height: 100%; /* Ensures video fills the height */
+    width: auto; /* Allows aspect ratio to be maintained */
+    height: auto; /* Allows aspect ratio to be maintained */
+    z-index: 1; /* Places the video behind text */
+    transform: translate(-50%, -50%); /* Center the video */
+}
+
+.section-1 h2,
+.section-1 p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    position: relative; /* Position text over the video */
+    z-index: 2; /* Bring text above the video */
+    margin: 0 20px; /* Add some margin to text */
+}
+
+.section-1 p {
+    max-width: 600px; /* Limit the width of paragraphs */
+}
+
+/* ============ Pooja Timeings=================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+thead th {
+    background-color: #4CAF50; /* Dark green color for the header */
+    color: white;
+    padding: 10px;
+    font-size: 1.1em;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+tbody td {
+    padding: 10px;
+    font-size: 1em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for alternate rows */
+}
+
+tr:hover {
+    background-color: #e8f5e9; /* Lighter green on hover */
+}
+
+table th, table td {
+    padding: 8px 12px;
+}
+
+thead th, tbody td {
+    border: 1px solid #ddd;
+}
+
+
+/* ============== Roots============== */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.route-list h1 {
+    text-align: center;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.roots-container {
+    background-color: #e7f3fe; /* Light blue background for contrast */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.route-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.route-list li {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.stop {
+    font-weight: bold;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.distance {
+    color: #7f8c8d;
+    margin-left: 10px;
+}
+
+.route-list p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* Sections */
+.section {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 10px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-1 { background-color: #e0f7fa; }
+.section-2 { background-color: #ffeb3b; }
+.section-4 { background-color: #8bc34a; }
+.section-6 { background-color: #e0dedf; }
+.section-8 { background-color: #03a9f4; }
+.section-9 { background-color: #cddc39; }
+.section-10 { background-color: #f8e1da; }
+
+.section h2 {
+    color: #4b0082;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+}
+
+
+
+.video-container {
+    display: flex; /* Use flexbox to align videos side by side */
+    justify-content: space-around; /* Space them out evenly */
+    margin: 10px; /* Add margin around the container */
+}
+/* Style for each video iframe */
+.video-container iframe {
+    border-radius: 10px;
+    width: 48%; /* Set width of each video */
+    height: 260px; /* Set height of each video */
+}
+
+#map img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #272702;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+.section {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+#festivals h3{
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.toTopbtn {
+    cursor: pointer;
+    position: fixed; /* Fixed position for the button */
+    bottom: 14px; /* Distance from the bottom of the viewport */
+    right: 14px; /* Distance from the right of the viewport */
+    background-color: #ef3f04; /* Background color */
+    color: #fff; /* Text color */
+    padding: 4px 8px; /* Padding for size */
+    border-radius: 50px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    font-size: 14px; /* Font size */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline on link */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    z-index: 1000; /* Ensure button is above other elements */
+}
+
+.toTopbtn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+.toTopbtn a {
+    font-size: 24px;
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+
+/* ================contact form====================== */
+
+/* Section styling */
+.section-11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Address container */
+.image-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.image-container h2 {
+    color: #333333;
+}
+
+.image-container p {
+    color: #555555;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.image-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Contact form container */
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    background: #ffffff;
+}
+
+.contact-form h2 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #666666;
+    font-size: 14px;
+}
+
+.contact-form input {
+    width: 97%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa9a9;
+    border-radius: 18px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e26308;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #111212;
+}
+
+/* Map iframe styling */
+iframe {
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    margin-top: 15px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .contact-form-container {
+        flex-direction: column;
+    }
+    .image-container, .contact-form {
+        width: 90%;
+        padding: 15px;
+    }
+    iframe {
+        height: 180px;
+    }
+}
+
+
+.bus-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensures text is centered */
+    margin: 0 auto; /* Centers the container on the page */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bus-info img {
+    border-radius: 10px;
+}
+.section-9 ul li{
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.219);
+}
