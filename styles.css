@@ -60,6 +60,7 @@ header {
   margin: 0 15px;
   border: 1px solid #9c9b9b;
   border-radius: 20px;
+  padding: 2px;
   padding: 8px;
   background-color: #fda6a6;
 }
@@ -73,7 +74,6 @@ header {
   color: #000;
   font-size: 13px;
   font-weight: bold;
-  padding: 8px 50px !important;
 }
 
 .navbar nav ul li a:hover {
@@ -96,16 +96,21 @@ header {
   .navbar-menu {
     display: none;
     flex-direction: column;
-    width: 100%;
+    right: 2px;
     position: absolute;
     top: 100%;
-    left: 0;
-    background-color: #fff;
+    left: 2px;
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background color */
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
     padding: 10px;
     border-top: 2px solid #000;
     z-index: 1000;
     text-align: center;
     justify-content: center;
+    border: 2px solid rgb(127, 127, 127);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
   }
 
   .navbar h1 {
@@ -128,7 +133,17 @@ header {
   .navbar nav ul li {
     margin: 5px 0;
     border-radius: 50px;
-    width: 200px;
+    padding: 2px !important;
+    width: 50%;
+    background-color: #6e6e6e;
+  }
+  .navbar nav ul li a{
+    display: block;
+    padding:8px;
+    width: 95%;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
   }
 }
 
